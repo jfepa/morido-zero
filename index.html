@@ -113,6 +113,8 @@
     .form-wrap{background:#fff;border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);overflow:hidden}
     .form-head{padding:26px 28px;background:var(--green-3);border-bottom:1px solid var(--line)}
     .form-head h2{margin:0 0 6px}.form-head p{margin:0;color:var(--muted)}
+    .form-head .form-note{margin-top:10px;font-size:14px;line-height:1.7}
+    .form-head .form-note a{color:var(--green-2);font-weight:700}
     /* 【修正 r3】新規追加：ファーストビュー強調帯（官兵衛①） */
     .highlight-strip{
       display:inline-block;
@@ -318,6 +320,7 @@
             <!-- 【修正 r4】旧: 「はじめに現在の状況をお選びのうえ、氏名・電話番号・メール・所在地・相談内容をご入力ください。」
                  → 新: 三択はForms設問1に一本化されたため、案内文をForms内での選択を指す表現に微調整 -->
             <p>フォームの最初の設問で現在の状況をお選びのうえ、氏名・電話番号・メール・所在地・相談内容をご入力ください。</p>
+            <p class="form-note">ご入力いただく個人情報の取扱いについては、<a href="./privacy.html">プライバシーポリシー</a>をご確認ください。フォームが表示されない場合は、<a href="https://docs.google.com/forms/d/e/1FAIpQLScIRmFN3exD1Se-4hbo7e7wIhAdbw_ahNYWeguUUT6YOQf4Pg/viewform" target="_blank" rel="noopener">こちらから直接開けます</a>。</p>
           </div>
           <!-- 【修正 r4】旧: 三択ラジオボタン群（.status-choice／r3で新設）
                → 新: 削除。A案採用によりトリアージ三択はGoogle Forms設問1へ一本化
@@ -341,7 +344,8 @@
       <div>
         <strong>NPO法人 日本フィールド環境保全協会（JFEPA）</strong><br>
         本部：神奈川県相模原市緑区城山2-6-12<br>
-        URL：<a href="https://jfepa.org/">https://jfepa.org/</a>
+        URL：<a href="https://jfepa.org/">https://jfepa.org/</a><br>
+        <a href="./privacy.html">プライバシーポリシー（個人情報の取扱いについて）</a>
         <div class="small">本ページは土地所有者向けの相談受付ページです。掲載内容は一般的な情報であり、個別案件の結果を保証するものではありません。</div>
       </div>
       <div>
