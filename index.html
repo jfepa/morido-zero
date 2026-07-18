@@ -7,8 +7,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>危険盛土ゼロプロジェクト｜JFEPA</title>
-  <meta name="description" content="危険盛土・盛土規制法に関する土地所有者向け相談ページ。JFEPAが現状整理、行政協議の準備、改良計画の検討を支援します。">
+  <!-- 【修正 r5】旧: 「危険盛土ゼロプロジェクト｜JFEPA」→ 新: 想定検索クエリ（危険盛土／相談／通報／窓口／NPO法人JFEPA）を組込み -->
+  <title>危険盛土の相談・通報窓口｜危険盛土ゼロプロジェクト｜NPO法人JFEPA</title>
+  <!-- 【修正 r5】旧 description → 新: 想定検索クエリ組込・LP本体の非金銭表現と整合 -->
+  <meta name="description" content="行政の対応範囲外とされた危険な盛土でお困りの土地所有者の方へ。NPO法人日本フィールド環境保全協会（JFEPA）が盛土規制法に精通した専門スタッフで相談窓口を運営しています。営利目的の勧誘は行いません。個人情報は適切に取り扱います。">
+  <!-- 【修正 r5】新規追加：クローラ指示・著者情報 -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="author" content="NPO法人 日本フィールド環境保全協会（JFEPA）">
   <!-- OGP / SNSシェア設定（確定版 2026-07-07） -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jfepa.github.io/morido-zero/">
@@ -20,6 +25,10 @@
   <meta property="og:site_name" content="NPO法人日本フィールド環境保全協会">
   <meta property="og:locale" content="ja_JP">
   <meta name="twitter:card" content="summary_large_image">
+  <!-- 【修正 r5】新規追加：twitter個別タグ（未指定時のOGPフォールバックを明示化） -->
+  <meta name="twitter:title" content="危険盛土の相談・通報窓口｜危険盛土ゼロプロジェクト">
+  <meta name="twitter:description" content="行政の対応範囲外とされた危険な盛土でお困りの方へ。NPO法人JFEPAの専門相談窓口。">
+  <meta name="twitter:image" content="https://jfepa.github.io/morido-zero/assets/ogp.png">
   <link rel="canonical" href="https://jfepa.github.io/morido-zero/">
   <style>
     :root{
@@ -161,6 +170,115 @@
       }
     }
   </style>
+
+  <!-- ============================================================
+       【修正 r5】新規追加：構造化データ（JSON-LD）4種
+       Organization型は NGO を採用（NonprofitOrganization は Schema.org 非実装型・
+       LocalBusiness は営利事業所属性を含みLP本体の非営利表現と矛盾するため不採用）
+       FAQPage の text は #faq セクションの本文可視Q&Aと完全一致（Google必須要件）
+       ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "@id": "https://jfepa.org/#organization",
+    "name": "特定非営利活動法人 日本フィールド環境保全協会",
+    "alternateName": ["NPO法人JFEPA", "JFEPA", "日本フィールド環境保全協会"],
+    "url": "https://jfepa.org/",
+    "description": "環境保全・防災・地域連携・行政協働・青少年育成を担う特定非営利活動法人。北海道・神奈川県・相模原市・富士宮市とSDGsパートナーシップを締結。国土交通省 流域治水オフィシャルサポーター。",
+    "foundingLocation": {
+      "@type": "Place",
+      "name": "神奈川県相模原市"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "postalCode": "252-0116",
+      "addressCountry": "JP",
+      "addressRegion": "神奈川県",
+      "addressLocality": "相模原市緑区",
+      "streetAddress": "城山2-6-12"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "危険盛土に関する相談窓口",
+      "telephone": "+81-42-851-2076",
+      "email": "info@jfepa.org",
+      "areaServed": "JP",
+      "availableLanguage": ["ja"]
+    },
+    "knowsAbout": ["盛土規制法", "宅地造成及び特定盛土等規制法", "廃棄物処理法", "環境アセスメント", "汚泥改良土", "法面", "排水"],
+    "sameAs": [
+      "https://jfepa.org/",
+      "https://www.instagram.com/japan.field/"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://jfepa.github.io/morido-zero/#website",
+    "url": "https://jfepa.github.io/morido-zero/",
+    "name": "危険盛土ゼロプロジェクト",
+    "description": "NPO法人日本フィールド環境保全協会が運営する、危険盛土の相談・通報窓口",
+    "inLanguage": "ja",
+    "publisher": { "@id": "https://jfepa.org/#organization" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://jfepa.github.io/morido-zero/#faq",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "自治体に相談したところ「対応範囲外」と言われました。どうすればよいですか。",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "盛土規制法（宅地造成及び特定盛土等規制法）の規制区域外にある盛土や、法施行前から存在する既存盛土については、行政が直接の対応を行えない場合があります。危険盛土ゼロプロジェクトでは、そうした行政の対応範囲外に置かれた盛土についても、NPO法人の立場から状況の整理と技術的な検討を行い、必要に応じて行政との協働につなげる支援を行っています。まずは相談フォームからご連絡ください。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "相談すると営業や契約の勧誘を受けますか。",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "危険盛土ゼロプロジェクトは、特定非営利活動法人 日本フィールド環境保全協会（JFEPA）が公益活動として運営しています。ご相談に対して営利目的の勧誘は行いません。安心してご相談ください。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "どのような盛土が相談の対象になりますか。",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "崩落やひび割れの兆候がある盛土、雨天時に濁水や土砂が流出する盛土、出所の不明な土砂が搬入された盛土、法面（のりめん）の勾配が急で不安がある盛土などが対象です。ご自身の土地の盛土に限らず、近隣の盛土に関する情報提供・通報も受け付けています。危険かどうか判断がつかない段階でも構いません。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "相談内容や個人情報はどのように取り扱われますか。",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ご相談の際にお預かりした個人情報は、個人情報の保護に関する法律に基づき適切に管理し、ご相談への対応および関連するご連絡の目的にのみ利用します。ご本人の同意なく第三者へ提供することはありません。詳細はプライバシーポリシーをご確認ください。"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "NPO法人JFEPA", "item": "https://jfepa.org/" },
+      { "@type": "ListItem", "position": 2, "name": "危険盛土ゼロプロジェクト", "item": "https://jfepa.github.io/morido-zero/" }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="topbar" aria-label="ページ上部ナビゲーション">
@@ -172,6 +290,8 @@
       <nav class="nav-links" aria-label="主要リンク">
         <a href="#about">危険盛土とは</a>
         <a href="#support">できること</a>
+        <!-- 【修正 r5】新規追加：#faq への導線（既存 .nav-links を継承・CSS変更なし） -->
+        <a href="#faq">よくあるご質問</a>
         <a href="#form" class="btn btn-primary">相談フォームへ</a>
       </nav>
     </div>
@@ -308,6 +428,41 @@
             <p>行政からの指導・確認の連絡、相続した土地、古い盛土、斜面の不安。相談フォームから概要をお知らせください。</p>
           </div>
           <a class="btn btn-primary" href="#form">相談フォームへ進む</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         【修正 r5】新規追加：#faq セクション
+         配置＝#form 直前。既存クラス（.section/.section-white/.container/
+         .section-title/.grid/.grid-2/.card）のみ使用しCSS追加は一切なし。
+         本文Q&Aは <head> の FAQPage JSON-LD の text と完全一致
+         （Googleは構造化データと本文の一致を必須要件としているため改変禁止）
+         ============================================================ -->
+    <section id="faq" class="section section-white">
+      <div class="container">
+        <div class="section-title">
+          <span class="label">FAQ</span>
+          <h2>よくあるご質問</h2>
+          <p class="lead">危険盛土ゼロプロジェクトへ多く寄せられるご質問と、その回答です。</p>
+        </div>
+        <div class="grid grid-2">
+          <article class="card">
+            <h3>自治体に相談したところ「対応範囲外」と言われました。どうすればよいですか。</h3>
+            <p>盛土規制法（宅地造成及び特定盛土等規制法）の規制区域外にある盛土や、法施行前から存在する既存盛土については、行政が直接の対応を行えない場合があります。危険盛土ゼロプロジェクトでは、そうした行政の対応範囲外に置かれた盛土についても、NPO法人の立場から状況の整理と技術的な検討を行い、必要に応じて行政との協働につなげる支援を行っています。まずは相談フォームからご連絡ください。</p>
+          </article>
+          <article class="card">
+            <h3>相談すると営業や契約の勧誘を受けますか。</h3>
+            <p>危険盛土ゼロプロジェクトは、特定非営利活動法人 日本フィールド環境保全協会（JFEPA）が公益活動として運営しています。ご相談に対して営利目的の勧誘は行いません。安心してご相談ください。</p>
+          </article>
+          <article class="card">
+            <h3>どのような盛土が相談の対象になりますか。</h3>
+            <p>崩落やひび割れの兆候がある盛土、雨天時に濁水や土砂が流出する盛土、出所の不明な土砂が搬入された盛土、法面（のりめん）の勾配が急で不安がある盛土などが対象です。ご自身の土地の盛土に限らず、近隣の盛土に関する情報提供・通報も受け付けています。危険かどうか判断がつかない段階でも構いません。</p>
+          </article>
+          <article class="card">
+            <h3>相談内容や個人情報はどのように取り扱われますか。</h3>
+            <p>ご相談の際にお預かりした個人情報は、個人情報の保護に関する法律に基づき適切に管理し、ご相談への対応および関連するご連絡の目的にのみ利用します。ご本人の同意なく第三者へ提供することはありません。詳細は<a href="./privacy.html">プライバシーポリシー</a>をご確認ください。</p>
+          </article>
         </div>
       </div>
     </section>
