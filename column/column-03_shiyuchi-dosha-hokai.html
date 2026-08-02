@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>私有地の土砂崩落：所有者が知るべき法的責任と災害後の対応策｜危険盛土ゼロプロジェクト</title>
+  <meta name="description" content="豪雨や台風で私有地の土砂が崩落した場合、自然災害であっても所有者が損害賠償責任（民法717条）を負う可能性があります。土砂災害警戒区域等の法規制と、災害発生後の適切な対応ステップをNPOが解説します。">
+  <meta property="og:title" content="私有地の土砂崩落：所有者が知るべき法的責任と災害後の対応策">
+  <meta property="og:description" content="豪雨や台風で私有地の土砂が崩落した場合、自然災害であっても所有者が損害賠償責任を負う可能性があります。法的責任と災害後の対応策を解説。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://jfepa.github.io/morido-zero/column/column-03_shiyuchi-dosha-hokai.html">
+  <meta property="og:site_name" content="危険盛土ゼロプロジェクト｜JFEPA">
+  <link rel="canonical" href="https://jfepa.github.io/morido-zero/column/column-03_shiyuchi-dosha-hokai.html">
+  <style>
+    :root{
+      --green:#0f4a35;--green-2:#176646;--green-3:#eaf4ef;
+      --orange:#f28c28;--orange-dark:#d96f00;
+      --ink:#1d2a24;--muted:#5f6f67;--line:#dbe7e1;
+      --white:#fff;--bg:#f7faf8;
+      --shadow:0 14px 35px rgba(15,74,53,.13);--radius:22px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family:"Hiragino Kaku Gothic ProN","Yu Gothic Medium","Meiryo",sans-serif;
+      color:var(--ink);background:var(--bg);line-height:1.85;font-size:16px;letter-spacing:.02em;
+    }
+    .container{max-width:840px;margin:0 auto;padding:0 20px}
+    a{color:var(--green-2);text-decoration:underline}
+    a:hover{color:var(--orange-dark)}
+    .topbar{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:100}
+    .topbar-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1080px;margin:0 auto}
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:700}
+    .brand-mark{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;background:var(--green);color:var(--white);border-radius:8px;font-weight:800;font-size:16px}
+    .brand-text{font-size:15px;letter-spacing:.05em}
+    .btn{display:inline-block;padding:10px 22px;border-radius:999px;font-weight:700;text-decoration:none;transition:.2s;font-size:14px}
+    .btn-primary{background:var(--orange);color:var(--white)}
+    .btn-primary:hover{background:var(--orange-dark);color:var(--white)}
+    .breadcrumb{background:var(--white);padding:12px 0;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted)}
+    .breadcrumb a{color:var(--muted)}
+    .breadcrumb .sep{margin:0 8px;color:var(--line)}
+    article.column{background:var(--white);padding:48px 32px;margin:32px auto;border-radius:var(--radius);box-shadow:var(--shadow)}
+    article.column h1{font-size:28px;line-height:1.5;color:var(--green);border-bottom:3px double var(--green);padding-bottom:16px;margin:0 0 24px;font-weight:700}
+    article.column .meta{color:var(--muted);font-size:13px;margin-bottom:32px}
+    article.column h2{font-size:22px;color:var(--green);border-left:6px solid var(--green);padding:6px 0 6px 16px;margin:40px 0 16px;font-weight:700}
+    article.column h3{font-size:18px;color:var(--ink);margin:24px 0 10px;padding-left:14px;border-left:3px solid var(--orange);font-weight:700}
+    article.column p{margin:14px 0}
+    article.column strong{color:var(--green-2);font-weight:700}
+    article.column ul, article.column ol{margin:14px 0;padding-left:28px}
+    article.column li{margin:6px 0}
+    article.column hr{border:0;border-top:1px solid var(--line);margin:32px 0}
+    .cta-box{background:linear-gradient(135deg,var(--green-3),#f3f9f5);border-left:6px solid var(--orange);padding:28px 32px;border-radius:16px;margin:32px 0}
+    .cta-box h3{color:var(--green);margin:0 0 16px;font-size:20px;padding:0;border:none}
+    .cta-box ul{list-style:none;padding:0;margin:16px 0}
+    .cta-box li{padding:6px 0;font-size:15px}
+    .cta-box li strong{display:inline-block;min-width:110px;color:var(--green)}
+    .cta-box .free-note{background:var(--white);padding:12px 18px;border-radius:10px;margin-top:16px;font-size:14px;color:var(--muted)}
+    .cta-box .cta-btn{display:inline-block;margin-top:16px;padding:14px 32px;background:var(--orange);color:var(--white);border-radius:999px;text-decoration:none;font-weight:700;font-size:16px}
+    .cta-box .cta-btn:hover{background:var(--orange-dark);color:var(--white)}
+    .related-columns{background:var(--white);border:1px solid var(--line);padding:24px 28px;border-radius:12px;margin:32px 0}
+    .related-columns h3{color:var(--green);margin:0 0 16px;font-size:18px;padding:0;border:none}
+    .related-columns ul{list-style:none;padding:0;margin:0}
+    .related-columns li{padding:10px 0;border-bottom:1px dotted var(--line)}
+    .related-columns li:last-child{border-bottom:none}
+    .related-columns a{color:var(--green-2);text-decoration:none;display:block;padding:6px 0}
+    .related-columns a:hover{color:var(--orange-dark)}
+    .related-columns strong{color:var(--orange-dark);margin-right:8px}
+    .refs{background:var(--bg);padding:20px 24px;border-radius:12px;margin-top:32px;font-size:13px;color:var(--muted)}
+    .refs h3{color:var(--green);margin:0 0 12px;font-size:15px;padding:0;border:none}
+    .refs ul{padding-left:20px;margin:0}
+    .refs li{margin:6px 0;line-height:1.6}
+    .refs a{color:var(--green-2);word-break:break-all}
+    .footer{background:var(--green);color:var(--white);padding:32px 0 20px;margin-top:48px}
+    .footer-inner{max-width:1080px;margin:0 auto;padding:0 20px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;font-size:13px;line-height:1.7}
+    .footer a{color:var(--white)}
+    .footer .copy{width:100%;text-align:center;padding-top:20px;border-top:1px solid rgba(255,255,255,.15);margin-top:20px;font-size:12px;color:rgba(255,255,255,.7)}
+    @media (max-width:640px){
+      body{font-size:15px}
+      article.column{padding:28px 20px;margin:16px auto;border-radius:14px}
+      article.column h1{font-size:22px}
+      article.column h2{font-size:19px}
+      article.column h3{font-size:16px}
+      .cta-box{padding:20px 18px}
+      .cta-box li strong{min-width:90px;display:block}
+    }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="../" class="brand" aria-label="JFEPA 危険盛土ゼロプロジェクト">
+      <span class="brand-mark">J</span>
+      <span class="brand-text">危険盛土ゼロプロジェクト｜JFEPA</span>
+    </a>
+    <a href="../#form" class="btn btn-primary">相談フォームへ</a>
+  </div>
+</header>
+
+<nav class="breadcrumb" aria-label="パンくずリスト">
+  <div class="container">
+    <a href="../">危険盛土ゼロプロジェクト</a>
+    <span class="sep">›</span>
+    <span>コラム</span>
+    <span class="sep">›</span>
+    <span>私有地の土砂崩落：所有者が知るべき法的責任と災害後の対応策</span>
+  </div>
+</nav>
+
+<main>
+<div class="container">
+<article class="column">
+
+<h1>私有地の土砂崩落：所有者が知るべき法的責任と災害後の対応策</h1>
+<div class="meta">2026年8月2日 公開｜危険盛土ゼロプロジェクト（NPO法人 日本フィールド環境保全協会）</div>
+
+<p>「大雨で裏山の斜面が崩れ、隣の家に土砂が流れ込んでしまった」「所有している空き地の土留めが崩落し、道路を塞いでしまった」——。近年、激甚化する自然災害に伴い、私有地における土砂崩落トラブルが急増しています。</p>
+
+<p>「自然災害が原因なのだから、土地の所有者に責任はないはずだ」と考える方は少なくありません。しかし、法律上は必ずしもそうとは言い切れません。本コラムでは、災害発生後の不安を抱える土地所有者に向けて、土砂崩落に伴う法的責任（民法・土砂災害警戒区域法など）と、被害を最小限に抑えるための初動対応について解説します。</p>
+
+<h2>初動対応：土砂崩落が発生したらまず何をすべきか</h2>
+
+<p>もしご自身の所有地で土砂崩落が発生してしまった場合、パニックにならず、以下のステップで迅速に行動することが重要です。</p>
+<ol>
+  <li><strong>人命の安全確保と避難誘導</strong>：何よりも優先すべきは人命です。被害が及ぶ範囲に人がいる場合は直ちに避難を呼びかけ、必要に応じて警察（110番）や消防（119番）へ通報してください。</li>
+  <li><strong>自治体への連絡</strong>：道路の寸断や河川の閉塞など、公共インフラに影響が出ている場合は、速やかに市区町村の防災担当窓口や土木事務所へ連絡してください。災害対策基本法等に基づき、自治体が応急対策を実施する場合があります。</li>
+  <li><strong>二次災害の防止措置</strong>：崩落が続いている場合や、残った土砂が崩れそうな場合は、専門業者に依頼してブルーシートによる養生や土嚢の設置など、可能な範囲で応急処置を行います。</li>
+  <li><strong>状況の記録と保険の確認</strong>：被害状況を写真や動画で詳細に記録し、加入している火災保険（水災補償）や施設賠償責任保険などの適用範囲を保険会社に確認します。</li>
+</ol>
+
+<h2>「自然災害だから責任なし」は大きな誤解</h2>
+
+<p>多くの方が誤解していますが、台風や豪雨などの自然災害が引き金となった土砂崩落であっても、土地所有者が損害賠償責任を免れるとは限りません。ここで重要になるのが、民法が定める2つの責任です。</p>
+
+<h3>1. 民法第717条（工作物責任）：無過失責任の恐怖</h3>
+<p>私有地に擁壁、石積み、あるいは<strong>人工的な「盛土」</strong>が存在し、それが崩落して他人に損害を与えた場合、民法第717条（土地の工作物等の占有者及び所有者の責任）が適用される可能性が高くなります。</p>
+<p>この法律の最も恐ろしい点は、<strong>「土地の所有者は、過失がなくても損害賠償責任を負う（無過失責任）」</strong>と定められていることです。第一次的な責任は土地の「占有者（借りている人など）」にありますが、占有者が損害の発生を防止するのに必要な注意を払っていた場合は免責され、最終的に「所有者」が全責任を負うことになります。「自分は遠方に住んでいて知らなかった」「定期的に見回っていた」という主張は、所有者の免責事由にはなりません。工作物（盛土や擁壁）そのものに安全性を欠く欠陥（瑕疵）があったと判断されれば、賠償責任から逃れることは極めて困難です。</p>
+
+<h3>2. 民法第709条（不法行為責任）：予見可能性と過失</h3>
+<p>人工的な工作物がない純粋な自然斜面（自然林など）が崩落した場合は、民法第709条（不法行為）に基づく責任が問われる可能性があります。ここでは「過失」があったかどうかが争点となります。具体的には、<strong>「崩落の危険性を事前に予見できたか（予見可能性）」</strong>、そして<strong>「危険を予見できたのに、防止措置を怠ったか（結果回避義務違反）」</strong>が問われます。</p>
+
+<h2>予見可能性を高める「土砂災害警戒区域」</h2>
+
+<p>「素人に斜面が崩れるかどうかなんて予見できない」と思われるかもしれません。しかし、行政が公表している情報によって、法的な「予見可能性」があったとみなされるケースが増えています。</p>
+
+<p>その代表例が、<strong>土砂災害防止法（正式名称：土砂災害警戒区域等における土砂災害防止対策の推進に関する法律）</strong>に基づく区域指定です。</p>
+
+<p>都道府県は、土砂災害の恐れがある区域を「土砂災害警戒区域（イエローゾーン）」、さらに建築物に損壊が生じ住民の生命に著しい危害が生じる恐れがある区域を「土砂災害特別警戒区域（レッドゾーン）」として指定し、ハザードマップ等で公表しています。</p>
+
+<p>もし、あなたの土地がこれらの区域に指定されていた場合、「行政から危険性を指摘されていた（＝予見可能だった）にもかかわらず、民法第206条に基づく所有権の行使として適切な安全管理（擁壁の補強や樹木の伐採など）を怠った」として、過失責任を問われるリスクが跳ね上がります。</p>
+
+<h2>保険適用の限界と莫大な費用負担</h2>
+
+<p>隣家の建物や車を押し潰してしまった場合、その損害賠償額は数千万円に上ることもあります。さらに、道路に流れ出た土砂の撤去費用や、崩落斜面の復旧工事費用も、原則として土地所有者が負担しなければなりません（※災害救助法等が適用される大規模災害の場合を除き、私有地の復旧は自己負担が原則です）。</p>
+
+<p>「保険に入っているから大丈夫」と安心するのは危険です。一般的な火災保険の「水災補償」は、<strong>自身の建物や家財</strong>が被害を受けた場合には適用されますが、<strong>他人の財産</strong>に対する損害賠償には適用されません。また、地震保険も地震を原因とする崩落に限定されます。他者への賠償をカバーする「施設賠償責任保険」等に加入していない限り、莫大な費用を自己資金で賄うことになります。</p>
+
+<p>さらに、<a href="./column-01_souzoku-morido.html">コラム①</a>で解説した通り、これらの責任は「相続」によって親から子へと引き継がれます。危険な土地を放置することは、将来の世代に莫大な負債を残すことと同義です。</p>
+
+<h2>災害後の復旧と今後の安全対策に向けて</h2>
+
+<p>土砂崩落が発生してしまった後、最も重要なのは「これ以上の被害を出さないための抜本的な安全対策」です。特に、過去の不適切な盛土が崩落の原因であった場合、盛土規制法に基づき、行政からさらに厳しい是正措置命令が下される可能性があります。</p>
+
+<p>しかし、崩落斜面の復旧や強固な擁壁の再構築には、莫大な工事費用がかかります。「賠償金で手一杯で、復旧工事の費用がない」という深刻な事態に直面する所有者も少なくありません。</p>
+
+<p>私たち「危険盛土ゼロプロジェクト」を運営するNPO法人JFEPAは、このような「費用面で安全対策が行き詰まっている」土地所有者の方々からのご相談を受け付けています。提携企業（株式会社日総）が有する「汚泥改良土」の技術（※<a href="./column-02_gyousei-taio-gai.html">コラム②</a>参照）を活用することで、現場の土質を改良・補強し、従来の工法よりもコストを抑えて斜面の安定化や盛土の安全対策を実施できる可能性があります。</p>
+
+<p>土砂崩落の事後対応や、今後の安全対策の費用でお悩みの方は、当プロジェクトの無料相談窓口までご相談ください。JFEPAは工事を請け負う当事者ではなく、公益の立場から皆様の課題解決に向けた最適な道筋をアドバイスいたします。</p>
+
+<div class="cta-box">
+  <h3>危険盛土ゼロプロジェクト 相談窓口</h3>
+  <ul>
+    <li><strong>相談フォーム</strong> <a href="https://jfepa.github.io/morido-zero/">https://jfepa.github.io/morido-zero/</a></li>
+    <li><strong>Email</strong> <a href="mailto:info@jfepa.org">info@jfepa.org</a></li>
+    <li><strong>TEL</strong> 042-851-2076</li>
+    <li><strong>運営</strong> NPO法人 日本フィールド環境保全協会（JFEPA）</li>
+    <li><strong>本部所在地</strong> 〒252-0116 神奈川県相模原市緑区城山二丁目6番12号</li>
+    <li><strong>提携企業</strong> 株式会社日総（汚泥改良土 施工パートナー）</li>
+  </ul>
+  <div class="free-note">ご相談は完全無料です。土地所在地・現況写真・行政指導書類（あれば）をご準備の上、お気軽にご連絡ください。</div>
+  <a href="../#form" class="cta-btn">相談フォームで問い合わせる</a>
+</div>
+
+<div class="related-columns">
+  <h3>関連コラム</h3>
+  <ul>
+    <li>
+      <a href="./column-01_souzoku-morido.html">
+        <strong>コラム①｜</strong>相続した土地に危険な盛土が！所有者の責任と行政指導への対応方法
+      </a>
+    </li>
+    <li>
+      <a href="./column-02_gyousei-taio-gai.html">
+        <strong>コラム②｜</strong>行政対応外の危険盛土と汚泥改良土による低コスト解決策
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="refs">
+  <h3>参考文献</h3>
+  <ul>
+    <li>国土交通省. 土砂災害防止法（土砂災害警戒区域等における土砂災害防止対策の推進に関する法律）の概要.</li>
+    <li>国土交通省. ハザードマップポータルサイト（土砂災害警戒区域等）.</li>
+    <li>内閣府. 災害対策基本法の概要.</li>
+    <li>国土交通省. 盛土規制法（宅地造成及び特定盛土等規制法）の概要.</li>
+    <li>e-Gov 法令検索. 民法（第206条・第709条・第717条）.</li>
+  </ul>
+</div>
+
+</article>
+</div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <strong>NPO法人 日本フィールド環境保全協会（JFEPA）</strong><br>
+      〒252-0116 神奈川県相模原市緑区城山二丁目6番12号<br>
+      TEL: 042-851-2076 / Email: <a href="mailto:info@jfepa.org">info@jfepa.org</a>
+    </div>
+    <div>
+      <a href="../">危険盛土ゼロプロジェクト トップへ</a>
+    </div>
+    <div class="copy">© 2026 NPO法人 日本フィールド環境保全協会（JFEPA）</div>
+  </div>
+</footer>
+
+</body>
+</html>
