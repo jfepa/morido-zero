@@ -290,6 +290,8 @@
       <nav class="nav-links" aria-label="主要リンク">
         <a href="#about">危険盛土とは</a>
         <a href="#support">できること</a>
+        <!-- 【修正 r6】新規追加：#columns への導線（既存 .nav-links を継承・CSS変更なし） -->
+        <a href="#columns">コラム</a>
         <!-- 【修正 r5】新規追加：#faq への導線（既存 .nav-links を継承・CSS変更なし） -->
         <a href="#faq">よくあるご質問</a>
         <a href="#form" class="btn btn-primary">相談フォームへ</a>
@@ -428,6 +430,36 @@
             <p>行政からの指導・確認の連絡、相続した土地、古い盛土、斜面の不安。相談フォームから概要をお知らせください。</p>
           </div>
           <a class="btn btn-primary" href="#form">相談フォームへ進む</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         【修正 r6】新規追加：#columns セクション（コラム記事一覧）
+         配置＝#faq 直前。家康シリーズリンク設計書v1.0準拠。
+         既存クラス（.section/.container/.section-title/.grid/.grid-3/.card）のみ使用しCSS追加は一切なし。
+         コラム①②③（2026/8/2〜8/3公開）へのリンク集約セクション。
+         ============================================================ -->
+    <section id="columns" class="section">
+      <div class="container">
+        <div class="section-title">
+          <span class="label">COLUMNS</span>
+          <h2>コラム記事</h2>
+          <p class="lead">危険盛土・土砂災害に関する所有者向けの実務コラムを公開しています。</p>
+        </div>
+        <div class="grid grid-3">
+          <a href="./column/column-01_souzoku-morido.html" class="card">
+            <h3>相続した土地に危険な盛土が！</h3>
+            <p>所有者の責任と行政指導への対応方法</p>
+          </a>
+          <a href="./column/column-02_gyousei-taio-gai.html" class="card">
+            <h3>行政対応外の危険盛土</h3>
+            <p>汚泥改良土による低コスト解決策</p>
+          </a>
+          <a href="./column/column-03_shiyuchi-dosha-hokai.html" class="card">
+            <h3>私有地の土砂崩落</h3>
+            <p>所有者の法的責任と対応策</p>
+          </a>
         </div>
       </div>
     </section>
