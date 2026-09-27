@@ -124,6 +124,28 @@
     .form-head h2{margin:0 0 6px}.form-head p{margin:0;color:var(--muted)}
     .form-head .form-note{margin-top:10px;font-size:14px;line-height:1.7}
     .form-head .form-note a{color:var(--green-2);font-weight:700}
+    /* N-GEN-002 Phase 2：既存ヒーロー内の相談CTAを強化 */
+    .hero-cta{max-width:620px;margin:0 0 22px;padding:19px 20px;border:1px solid rgba(255,255,255,.35);border-radius:20px;background:rgba(255,255,255,.13);box-shadow:0 12px 26px rgba(0,0,0,.12)}
+    .hero-cta-label{margin:0 0 4px;color:#ffd6a4;font-size:13px;font-weight:900;letter-spacing:.08em}
+    .hero-cta-title{margin:0 0 14px;font-size:clamp(18px,2.2vw,23px);font-weight:900;line-height:1.45}
+    .hero-cta-actions{display:flex;flex-wrap:wrap;gap:10px}
+    .hero-cta .btn{min-height:48px;padding:12px 18px;box-shadow:none}
+    .hero-cta .btn-outline{border-color:rgba(255,255,255,.55);background:rgba(255,255,255,.96)}
+    .hero-sub-link{display:inline-block;margin-top:13px;color:#fff;font-size:14px;font-weight:800;text-decoration:underline;text-underline-offset:4px}
+    /* N-GEN-002 Phase 2：信頼性訴求と匿名化事例 */
+    .trust-card{height:100%;padding:28px}
+    .trust-card h3{font-size:22px}
+    .trust-list,.case-list{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:13px}
+    .trust-list li{position:relative;padding-left:25px;color:var(--muted)}
+    .trust-list li::before{content:"";position:absolute;left:0;top:.72em;width:10px;height:10px;border:2px solid var(--orange);border-radius:50%}
+    .trust-list strong{display:block;color:var(--green)}
+    .trust-reference{margin:18px 0 0;color:var(--muted);font-size:14px}
+    .trust-reference a{color:var(--green-2);font-weight:800;text-decoration:underline;text-underline-offset:3px}
+    .case-card{height:100%;padding:28px}
+    .case-label{margin:0 0 7px;color:var(--orange-dark);font-size:13px;font-weight:900;letter-spacing:.06em}
+    .case-list li{padding:13px 14px;border-radius:14px;background:var(--green-3);color:var(--muted);line-height:1.7}
+    .case-list strong{display:block;color:var(--green);font-size:14px}
+    .case-disclaimer{max-width:850px;margin:28px auto 0;color:var(--muted);font-size:14px;text-align:center}
     /* 【修正 r3】新規追加：ファーストビュー強調帯（官兵衛①） */
     .highlight-strip{
       display:inline-block;
@@ -155,6 +177,7 @@
       .container{width:min(100% - 24px,1120px)}
       .section{padding:54px 0}
       .hero-actions .btn{width:100%}
+      .hero-cta-actions .btn{width:100%}
       .hero-card{padding:20px}
       .card{padding:22px}
       .cta-band{padding:26px;border-radius:24px}
@@ -309,13 +332,17 @@
                ※原案「行政に相談しても解決しなかった方へ」は行政批判と受け取られる
                おそれがあるため、法務調整のうえ下記文言に変更（中温度） -->
           <div class="highlight-strip">行政の窓口では「対応範囲外」とされたケースにも。<br>民間NPOの立場から、解決への整理をお手伝いします。</div>
-          <!-- 【修正 r3】旧: 「盛土規制法の対象になっていても、解決に向けた整理は可能です。まず相談フォームから状況をお知らせください。」
-               → 新: 官兵衛②民間NPO差別化・負担抑制の前面化（保証・断定表現は不使用） -->
-          <p>盛土規制法の対象になっていても、解決に向けた整理は可能です。営利目的の勧誘は行いません。ご負担をできるだけ抑えられる進め方を、複数の選択肢として一緒に整理します。まず相談フォームから状況をお知らせください。</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#form">相談フォームはこちら</a>
-            <a class="btn btn-outline" href="#check">該当するか確認する</a>
+          <!-- N-GEN-002 Phase 2｜上部CTA：相談導線をファーストビュー内で明確化 -->
+          <div class="hero-cta" aria-label="危険盛土の相談窓口">
+            <p class="hero-cta-label">CONSULTATION</p>
+            <p class="hero-cta-title">危険な盛土でお困りではありませんか？</p>
+            <div class="hero-cta-actions">
+              <a class="btn btn-primary" href="#form">相談フォームへ</a>
+              <a class="btn btn-outline" href="tel:0428512076">電話で相談する</a>
+            </div>
           </div>
+          <p>盛土規制法の対象となるか分からない場合も、状況に応じて確認すべき事項を整理します。営利目的の勧誘は行いません。まずは相談フォームから状況をお知らせください。</p>
+          <a class="hero-sub-link" href="#check">相談の対象を確認する</a>
           <div class="note">※JFEPAは行政機関の代理人ではありません。土地の状況整理、行政協議に向けた資料準備、改善方針の検討を支援します。</div>
         </div>
         <aside class="hero-card" aria-label="よくある相談内容">
@@ -400,6 +427,38 @@
       </div>
     </section>
 
+    <!-- N-GEN-002 Phase 2｜依頼3：公開根拠のある信頼性訴求 -->
+    <section id="trust" class="section">
+      <div class="container">
+        <div class="section-title">
+          <span class="label">TRUST</span>
+          <h2>地域と制度に向き合うための活動基盤</h2>
+          <p class="lead">相談内容を整理する際に大切にしている、地域連携と組織体制を公開情報に基づいてお伝えします。</p>
+        </div>
+        <div class="grid grid-2">
+          <article class="card trust-card">
+            <h3>行政・地域との連携</h3>
+            <ul class="trust-list">
+              <li><strong>SDGsパートナーシップ</strong>北海道、神奈川県、相模原市とのSDGsパートナーシップ</li>
+              <li><strong>国土交通省の制度登録</strong>流域治水オフィシャルサポーター（認定番号193・令和8年度）</li>
+              <li><strong>活動領域</strong>環境保全、防災、地域連携を軸に、関係者との対話と状況整理を進めます。</li>
+            </ul>
+            <p class="trust-reference">掲載根拠：<a href="https://jfepa.org/about" target="_blank" rel="noopener">JFEPA協会情報</a>／<a href="https://www.mlit.go.jp/mizukokudo/river/mizukokudo05_tk_000196.html" target="_blank" rel="noopener">国土交通省掲載情報</a></p>
+          </article>
+          <article class="card trust-card">
+            <h3>組織と相談対応の体制</h3>
+            <ul class="trust-list">
+              <li><strong>運営法人</strong>特定非営利活動法人 日本フィールド環境保全協会（JFEPA）</li>
+              <li><strong>法人情報</strong>法人番号：6021005012262／本部：神奈川県相模原市緑区城山二丁目6番12号</li>
+              <li><strong>活動・連携拠点</strong>相模原、盛岡、大津、富士宮、札幌の5拠点</li>
+              <li><strong>技術的な検討</strong>相談内容に応じ、個人情報保護方針に記載した範囲で株式会社日総と連携します。</li>
+            </ul>
+            <p class="trust-reference">個人情報の共同利用範囲は、<a href="./privacy.html">プライバシーポリシー</a>をご確認ください。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container">
         <div class="section-title">
@@ -407,10 +466,8 @@
           <h2>選ばれる理由</h2>
         </div>
         <div class="grid grid-2">
-          <!-- 【修正 r3】旧: 「土地所有者、地域、行政の関係を踏まえ、対立ではなく整理と合意形成を重視します。」
-               → 新: 官兵衛②民間NPO差別化・負担抑制の前面化。
-               ※金銭の具体表現（金額・無償等）は使用せず「負担を抑える選択肢の整理」に留める -->
-          <div class="card reason"><div class="icon">1</div><div><h3>営利目的ではない、民間NPOの立場</h3><p>土地所有者、地域、行政の関係を踏まえ、対立ではなく整理と合意形成を重視します。営利目的の勧誘は行わず、ご負担をできるだけ抑えられる進め方を複数の選択肢として整理します。</p></div></div>
+          <!-- 【修正 r3】民間NPOとして、対立ではなく整理と合意形成を重視する方針を明示 -->
+          <div class="card reason"><div class="icon">1</div><div><h3>営利目的ではない、民間NPOの立場</h3><p>土地所有者、地域、行政の関係を踏まえ、対立ではなく整理と合意形成を重視します。営利目的の勧誘は行わず、状況に応じた複数の選択肢を整理します。</p></div></div>
           <!-- 【修正 r3】旧: 「制度の考え方、行政協議の進め方、現場状況の説明方法を総合的に整理します。」
                → 新: 官兵衛③技術バックボーンの明文化（汚泥改良土等の技術的知見） -->
           <div class="card reason"><div class="icon">2</div><div><h3>盛土規制法と改良技術の両面からの専門対応</h3><p>制度の考え方、行政協議の進め方、現場状況の説明方法を総合的に整理します。汚泥改良土などの地盤改良技術に関する実務的な知見を土台に、制度と技術の両面から検討します。</p></div></div>
@@ -420,13 +477,43 @@
       </div>
     </section>
 
+    <!-- N-GEN-002 Phase 2｜依頼4：個人・地域を特定しない相談事例 -->
+    <section id="cases" class="section section-white">
+      <div class="container">
+        <div class="section-title">
+          <span class="label">CASES</span>
+          <h2>匿名化した相談事例</h2>
+          <p class="lead">ご相談後の整理・連携の進め方をイメージいただくため、個人・地域を特定しないよう内容を整理してご紹介します。</p>
+        </div>
+        <div class="grid grid-2">
+          <article class="card case-card">
+            <p class="case-label">相談事例 01｜危険盛土に関する行政対応の整理</p>
+            <h3>住民からの相談を受け、確認事項と資料を整理した事例</h3>
+            <ul class="case-list">
+              <li><strong>ご相談内容</strong>近隣の盛土について、行政への確認や住民監査請求の検討に必要な整理を進めたい。</li>
+              <li><strong>対応の整理</strong>立入調査・許可関連資料などの確認事項を整理し、必要な書類の準備と専門家との連携を支援。</li>
+              <li><strong>現在の状況</strong>個別案件として、地域の安全に関する確認と対応を継続中。</li>
+            </ul>
+          </article>
+          <article class="card case-card">
+            <p class="case-label">相談事例 02｜地域防災に関する関係者協議</p>
+            <h3>災害復旧後の再発防止に向け、論点を整理した事例</h3>
+            <ul class="case-list">
+              <li><strong>背景</strong>災害復旧後の地域で、再発防止に向けた技術面・環境面の確認が必要となった。</li>
+              <li><strong>対応の整理</strong>土地、技術、環境影響に関する確認事項を整理し、関係者との協議につなげた。</li>
+              <li><strong>現在の状況</strong>地域住民・関係者との協議を継続し、段階ごとに必要な確認を進めている。</li>
+            </ul>
+          </article>
+        </div>
+        <p class="case-disclaimer">※本事例は個別案件の内容を匿名化し、概要を整理したものです。土地の条件、関係法令、関係者との協議状況により対応は異なり、同様の経過や結果を保証するものではありません。</p>
+      </div>
+    </section>
+
     <section class="section section-white">
       <div class="container">
         <div class="cta-band">
           <div>
-            <h2>まずは、土地の状況を整理しましょう</h2>
-            <!-- 【修正 r3】旧: 「行政からの連絡、相続した土地、古い盛土、斜面の不安。」
-                 → 新: 官兵衛④言葉統一（「指導・確認の連絡」に統一） -->
+            <h2>状況に応じた確認事項を、まず整理しませんか</h2>
             <p>行政からの指導・確認の連絡、相続した土地、古い盛土、斜面の不安。相談フォームから概要をお知らせください。</p>
           </div>
           <a class="btn btn-primary" href="#form">相談フォームへ進む</a>
@@ -454,7 +541,7 @@
           </a>
           <a href="./column/column-02_gyousei-taio-gai.html" class="card">
             <h3>行政対応外の危険盛土</h3>
-            <p>汚泥改良土による低コスト解決策</p>
+            <p>汚泥改良土を活用した解決の選択肢</p>
           </a>
           <a href="./column/column-03_shiyuchi-dosha-hokai.html" class="card">
             <h3>私有地の土砂崩落</h3>
